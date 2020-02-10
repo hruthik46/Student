@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-$conn = mysqli_connect("localhost","root","","employee");
+$conn = mysqli_connect("localhost","root","","emp");
 if(count($_POST)>0) {
 $roll_no=$_POST[roll_no];
 $result = mysqli_query($conn,"SELECT * FROM employee where roll_no='$roll_no' ");
